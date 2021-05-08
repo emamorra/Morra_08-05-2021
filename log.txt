@@ -1,0 +1,174 @@
+commit 61fa92d43bdf8d85c744ba2abd92b3d1ac6dea9f
+Merge: 871595d b4f8f00
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:28:27 2021 +0200
+
+    Eseguito merge del ramo dev in master
+
+commit 871595d342c92ac76b60d84c3ebe25c50cb2b330
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:25:37 2021 +0200
+
+    Aggiunta nuova immagine. Modificata regola css
+
+diff --git a/css/style.css b/css/style.css
+index 5276d60..faa93eb 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,3 +1,3 @@
+ .text-red {
+-	color: #ff0000;
++	color: #ff00ff;
+ }
+diff --git a/img/fukushima2.jpg b/img/fukushima2.jpg
+new file mode 100644
+index 0000000..d3b2b19
+Binary files /dev/null and b/img/fukushima2.jpg differ
+diff --git a/localitaMare.html b/localitaMare.html
+index 1dc2b40..d20c427 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -5,6 +5,6 @@
+ 	</head>
+ 	<body>
+ 		<h2 class="text-red">Fukushima</h2>
+-		<img src="./img/fukushima.jpg"></img>
++		<img src="./img/fukushima2.jpg"></img>
+ 	</body>
+ </html>
+
+commit b4f8f00e8e4ec9310921580217169f166af2f3ac
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:22:02 2021 +0200
+
+    Aggiunta regola al css da applicare al tag h2
+
+diff --git a/css/style.css b/css/style.css
+index 5276d60..17d2de6 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,3 +1,7 @@
+ .text-red {
+ 	color: #ff0000;
+ }
++
++.text-center {
++	text-align: center;
++}
+diff --git a/localitaMare.html b/localitaMare.html
+index 1dc2b40..1d42dbf 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -4,7 +4,7 @@
+ 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+ 	</head>
+ 	<body>
+-		<h2 class="text-red">Fukushima</h2>
++		<h2 class="text-red text-center">Fukushima</h2>
+ 		<img src="./img/fukushima.jpg"></img>
+ 	</body>
+ </html>
+
+commit e758a0c269f8cc0b699b62806fdb7ecf1be3162d
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:19:30 2021 +0200
+
+    Aggiunto file style.css
+
+diff --git a/css/style.css b/css/style.css
+new file mode 100644
+index 0000000..5276d60
+--- /dev/null
++++ b/css/style.css
+@@ -0,0 +1,3 @@
++.text-red {
++	color: #ff0000;
++}
+diff --git a/localitaMare.html b/localitaMare.html
+index 022cb24..1dc2b40 100644
+--- a/localitaMare.html
++++ b/localitaMare.html
+@@ -1,8 +1,10 @@
+ <html>
+ 	<head>
+ 		<title>Titolo</title>
++		<link rel="stylesheet" type="text/css" href="./css/style.css">
+ 	</head>
+ 	<body>
+-		<h2>Fukushima</h2>
++		<h2 class="text-red">Fukushima</h2>
++		<img src="./img/fukushima.jpg"></img>
+ 	</body>
+ </html>
+
+commit b1be6b9167743baa2713b2967df108785cd3df2b
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:13:01 2021 +0200
+
+    Aggiunta pagina web localitá di mare
+
+diff --git a/localitaMare.html b/localitaMare.html
+new file mode 100644
+index 0000000..022cb24
+--- /dev/null
++++ b/localitaMare.html
+@@ -0,0 +1,8 @@
++<html>
++	<head>
++		<title>Titolo</title>
++	</head>
++	<body>
++		<h2>Fukushima</h2>
++	</body>
++</html>
+
+commit ce788e20d73fb33601180a8b73df8a52e14c0727
+Author: phreq <phreq@paranoici.org>
+Date:   Sat May 8 12:10:58 2021 +0200
+
+    Prima Commit
+
+diff --git a/img/fukushima.jpg b/img/fukushima.jpg
+new file mode 100644
+index 0000000..e67a8e4
+Binary files /dev/null and b/img/fukushima.jpg differ
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..d3125a3
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,11 @@
++<html>
++	<head>
++		<title>Titolo</title>
++	</head>
++	<body>
++		<h1>Essere o non essere</h1>
++		<p id="text-bold"></p>
++
++		<script src="./js/script.js"></script>
++	</body>
++</html>
+diff --git a/js/script.js b/js/script.js
+new file mode 100644
+index 0000000..71f1409
+--- /dev/null
++++ b/js/script.js
+@@ -0,0 +1,2 @@
++var paragrafo = document.getElementById("text-bold");
++paragrafo.innerHTML = "Questo sito è stato creato durante il compito di Tecnologie";
+
+commit c4090872f5a889c34375e95de345fe31235c718e
+Author: emamorra <82208306+emamorra@users.noreply.github.com>
+Date:   Sat May 8 11:53:56 2021 +0200
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..b8d8264
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++# Morra_08-05-2021
++Repository per compito 8/5/2021

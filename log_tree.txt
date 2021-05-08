@@ -1,0 +1,9 @@
+*   61fa92d (HEAD -> master, origin/master, origin/HEAD) Eseguito merge del ramo dev in master
+|\  
+| * b4f8f00 (origin/dev, dev) Aggiunta regola al css da applicare al tag h2
+* | 871595d Aggiunta nuova immagine. Modificata regola css
+|/  
+* e758a0c Aggiunto file style.css
+* b1be6b9 Aggiunta pagina web localitá di mare
+* ce788e2 Prima Commit
+* c409087 Initial commit
